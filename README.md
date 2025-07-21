@@ -45,3 +45,23 @@ This project bridges **Data Engineering** and **Software Engineering**:
                           ┌──────────────────────┐
                           │ Update skills.json   │
                           └──────────────────────┘
+
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/res_analyzer.git
+cd res_analyzer
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
+
+cd backend
+uvicorn main:app --reload --port 8001
+
+cd frontend
+streamlit run app.py
